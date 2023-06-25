@@ -1,0 +1,25 @@
+.wrapper {
+  @apply fixed h-20 w-full items-center;
+  @apply dark:bg-slate-800 bg-slate-800 left-0 top-0 z-30 transition-transform duration-500 shadow-sm text-white;
+}
+
+.header {
+  @apply grid grid-cols-3 items-center h-full max-w-screen-2xl mx-auto px-3;
+  .rightBlock {
+    @apply flex items-center justify-end h-full gap-x-3;
+  }
+
+  .navLinks {
+    @apply flex items-center justify-center h-full;
+    .link {
+      @apply flex items-center h-full px-5 hover:text-slate-300;
+      svg {
+        @apply mr-2;
+      }
+    }
+  }
+}
+
+.hidden {
+  @apply -translate-y-full;
+}

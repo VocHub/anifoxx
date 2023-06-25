@@ -1,0 +1,42 @@
+body {
+  @apply bg-slate-100 text-slate-900 font-bold;
+  @apply dark:bg-gray-900 dark:text-slate-400;
+  @apply min-h-screen overflow-x-hidden;
+}
+
+input {
+  @apply border-none bg-transparent font-bold;
+  &:focus {
+    @apply outline-none;
+  }
+}
+
+a {
+  @apply hover:text-orange-400 hover:dark:text-orange-300 transition-colors;
+}
+
+p {
+  @apply text-base;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply dark:text-slate-400;
+}
+
+h1 {
+  @apply text-2xl;
+}
+h2 {
+  @apply text-xl;
+}
+h3 {
+  @apply text-lg;
+}
+button {
+  @apply px-8 py-2 bg-orange-400 rounded text-white;
+}

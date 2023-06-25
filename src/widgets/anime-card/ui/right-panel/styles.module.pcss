@@ -1,0 +1,48 @@
+.rightPanel {
+  @apply dark:bg-slate-800 bg-slate-200 drop-shadow backdrop-opacity-30 left-[105%] px-4 py-2 w-64 absolute rounded-md top-2 z-10 overflow-hidden;
+
+  .season {
+    @apply cursor-pointer hover:underline;
+  }
+
+  .topInfo {
+    @apply flex items-center justify-between mb-3;
+
+    .mpaRating {
+      @apply opacity-90 hover:opacity-100 cursor-pointer bg-[var(--card-background-color)] text-[var(--card-background-text-color)];
+    }
+  }
+
+  .studio {
+    @apply my-1;
+    p {
+      @apply text-sm;
+    }
+    .studioName {
+      @apply text-[var(--card-overlay-text-color)] hover:underline cursor-pointer w-fit;
+    }
+
+    .animeProgress {
+      @apply my-0.5 flex items-center justify-between;
+
+      .status {
+        @apply opacity-90 hover:opacity-100 hover:underline cursor-pointer;
+      }
+    }
+  }
+
+  .genres {
+    @apply flex items-center mt-4 flex-wrap;
+    .genre {
+      @apply mx-0.5 mb-1 py-0.5 grow text-center text-xs bg-[var(--card-background-color)] text-[var(--card-background-text-color)] px-2 rounded whitespace-nowrap opacity-90 hover:opacity-100 cursor-pointer;
+    }
+  }
+  .genresToggle {
+    @apply mx-auto w-fit cursor-pointer rounded text-xl;
+  }
+}
+
+.leftPanelPosition {
+  @apply left-0;
+  transform: translateX(-104%) !important;
+}

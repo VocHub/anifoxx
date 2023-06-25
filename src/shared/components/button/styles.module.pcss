@@ -1,0 +1,24 @@
+.button {
+  @apply appearance-none gap-3 transition-colors px-2;
+  .buttonContent {
+    @apply flex items-center gap-x-1.5 justify-between;
+    .buttonText {
+      @apply whitespace-nowrap text-sm flex-1;
+    }
+  }
+  .icon {
+    @apply text-xl;
+  }
+}
+
+.buttonDisabled {
+  @apply backdrop-blur-sm opacity-80;
+}
+
+.loader {
+  @apply animate-spin;
+}
+
+.button[type="submit"] {
+  @apply bg-orange-400;
+}
